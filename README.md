@@ -1,75 +1,31 @@
-# Getting Started with Create React App
+# Seid gegrüßt, liebes NTAG-Team!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ich habe mich in den letzen Tagen an eurer Coding-Challenge versucht.
+Alle Pflichtkomponenten, sprich die Navbar, der MainView, sowie der DetailView wurden eingebaut.
+Auch den ComparisonView habe ich eingebaut.
+Insofern habe ich also alle Komponenten, die genannt wurden erstellen können und diese sind auch funktionstüchtig.
 
-## Available Scripts
+Im Folgenden kommen Punkte, die ihr wahrscheinlich ansprechen würdet:
 
-In the project directory, you can run:
+## 1. Es waren Bilder gefordert, die beispielsweise das Banner/Profilbild eines Künstlers zeigen
+Über relevante API-Endpunkte werden zwar Image-Arrays mit verschiedenen Auflösungen geschickt, aber diese enthalten unabhängig vom gewählten Künstler immer das gleiche Bild eines weißen Sterns.
+Das könnt ihr auch noch mal [hier](https://stackoverflow.com/questions/55978243/last-fm-api-returns-same-white-star-image-for-all-artists) nachlesen.
+### Wie könnte man dieses Problem lösen?
+Wenn man über `artist.getInfo` Anfragen sendet, wird auch eine URL auf das jeweilige LastFM-Profil geschickt.
+Mittels eines Webscrapers im Backend könnte man so die relevanten Bilder suchen und in verschiedenen Auflösungen abspeichern.
 
-### `npm start`
+## 2. Du hast keine Tests für die Komponenten geschrieben
+Im Zuge kleiner Projekte macht es aus meiner Sicht wenig Sinn, Tests zu schreiben. Erst wenn Komponenten größer, komplexer und untereinander abhängig sind, sollte man, um auf lange Sicht Entwicklungs-Ressourcen sinnvoll zu verteilen, Tests schreiben.
+### Wie könnte man dieses Problem lösen?
+Dafür gibt es mittlerweile diverse Frameworks, die das Erstellen von Tests automatisieren können. Ein Beispiel dafür wären [Jest](https://jestjs.io/) oder [Enzyme](https://enzymejs.github.io/enzyme).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Solltest du nicht Angular für das Projekt verwenden?
+Aktuell habe ich noch wenig Erfahrung mit Angular. Ich habe zwar schon ein kleines bisschen damit gespielt, bewege mich aktuell aber noch wesentlich schneller mit React. Da ich diese Woche noch diversen Schülern Nachhilfe gebe, muss ich das bisschen Zeit, was zum Programmieren bleibt sinnvoll nutzen. Unabhängig davon, Sophia meinte ja ohnehin, dass ich statt Angular React nutzen kann. Ich bin natürlich mehr als willig, meine Kenntnisse in Angular auszubauen, gerade wenn es dann auf ein etwaiges Anstellungsverhältnis zugeht. Hoffe, das ist okay für euch, React ist ja ohnehin etwas lesbarer als Angular. :D
+### Wie könnte man dieses Problem lösen?
+Da wäre natürlich die offensichtliche Lösung, einfach Angular zu lernen. Ich denke aber, das man stets nach Frameworks suchen sollte, die einem viel Arbeit abnehmen können. Da gäbe es beispielsweise [react2angular](https://github.com/coatue-oss/react2angular), [ngReact](https://github.com/ngReact/ngReact).
+Hier sei natürlich gesagt, dass diese Pakete nicht fehlerfrei arbeiten, man sollte also auf jeden Fall Grundkenntnisse in Angular besitzen. 
+Auch modernster Technologien kann man sich bedienen. Ich selbst nutze beispielsweise gerne [ChatGPT](https://openai.com/blog/chatgpt/) von OpenAI, um CSS oder einfache JS-Funktionen zu generieren, wenn ich zu faul bin, selbst Code zu schreiben. Das funktioniert erstaunlich gut und man kann das übrigens auch verwenden, um eine React-Komponente in eine Angular-Komponente zu transformieren. Auch hier sollte man natürlich genug über das jeweilige Framework wissen, um Fehler auszuradieren. Auch hier gilt wieder: man sollte mit der Technik gehen. Vieles, was Entwickler machen, ist repetitiv. Wenn man dadurch Zeit sparen kann, umso besser für die Firma und den Kunden. Man sollte natürlich trotzdem genug Grundkenntnisse haben, um Sachen in Frage stellen zu können und etwaige Bugs zu fixen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 4. CSS hätte man übersichtlicher gestalten können
+CSS ist eine sehr geschmacksabhängige Sache. Mein grundlegender Ansatz besteht darin, mir zu überlegen, welche Styles immer wieder vewendet werden könnten. Da kommen mir zum Beispiel `display : flex` oder sowas wie `position : relative` in den Sinn, aber auch Dinge wie `color : white` oder `justify-content : center. Dann schreibt man für einzelne Komponenten Stylesheets, die im besten Fall Styles enthalten, die spezifisch für das Element sind. Ich halte mich allerdings bei persönlichen Projekten nicht religiös an diese Vorgaben. So kommt es in manchen Fällen zu Dopplungen. In großen Projekten würde ich dann 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-###
-
-Übrigens, Bilder lassen sich nicht mehr über die API abrufen:
-[https://stackoverflow.com/questions/55978243/last-fm-api-returns-same-white-star-image-for-all-artists]

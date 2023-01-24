@@ -1,0 +1,12 @@
+.modal-container {
+    width: 100%;
+}
+
+.modal-container-ta {
+    width: 100%;   
+}
+
+.modal-container-ta-c {
+    width: 50%;
+    justify-content: start;
+}

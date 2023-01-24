@@ -1,0 +1,25 @@
+.fixed {
+  position: fixed;
+}
+
+.flexh {
+  display: flex;
+  flex-direction: row;
+}
+
+.relative {
+  position: relative;
+}
+
+.flexc {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}

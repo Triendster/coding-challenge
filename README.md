@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###
+
+Übrigens, Bilder lassen sich nicht mehr über die API abrufen:
+[https://stackoverflow.com/questions/55978243/last-fm-api-returns-same-white-star-image-for-all-artists]

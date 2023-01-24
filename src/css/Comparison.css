@@ -1,0 +1,23 @@
+.results-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.comparison-results-box {
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+.comparison-results {
+  max-width: 50%;
+}
+
+.comparison-metadata {
+  max-width: 50%;
+}
+
+.results-list li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}

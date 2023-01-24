@@ -1,0 +1,58 @@
+.navbar {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+  z-index: 2;
+}
+
+.navbar-search-results {
+  position: relative;
+  top: 10vh;
+  padding: 2vh 0;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.navbar-container-img {
+  height: 50%;
+  width: 10%;
+  padding: 1vw;
+}
+
+.navbar-container-text {
+  color: red;
+  font-size: 1.5vw;
+  padding: 1vw;
+}
+
+.navbar-search-section {
+  padding-right: 2vw;
+}
+
+.navbar-container-anchor {
+  border-radius: 10px;
+  color: red;
+  font-size: 1.5vw;
+  padding: 1vw;
+  text-decoration: none;
+}
+
+.navbar-search-results-list {
+  width: 60%;
+  padding-left: 5vw;
+}
+
+.navbar-search-results-list-item {
+  list-style: none;
+  font-size: 2vw;
+  width: 50%;
+}
+
+.navbar-search-results-list-item:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}

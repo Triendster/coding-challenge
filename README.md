@@ -9,6 +9,11 @@ Insofern habe ich also alle Komponenten, die genannt wurden erstellen können un
 Ich gehe mal davon aus, dass ihr Node ohnehin nutzt. Ergo einfach dieses Repository klonen und dann im jeweiligen Verzeichnis `npm install` ausführen.
 Mit `npm start` wird das Projekt dann auf `localhost:3000` gestartet.
 
+### Unter keinen Umständen vergessen, dem root-Verzeichnis dieses Projekts eine `.env`-Datei hinzuzufügen.
+Ihr braucht diese Datei, um den API-KEY zu speichern und abzurufen. Die Datei einfach anlegen und wie folgt den Schlüssel einspeichern: 
+
+#### `REACT_APP_API_KEY=96647210632826c06xxxxxxxxxxxxxxx` abspeichern. Den API-Schlüssel müsst ihr natürlich vorher über LastFM erstellen und abrufen unter folgender [Adresse](https://www.last.fm/de/api/accounts).
+
 Im Folgenden kommen Punkte, die ihr wahrscheinlich ansprechen würdet:
 
 ## 1. Es waren Bilder gefordert, die beispielsweise das Banner/Profilbild eines Künstlers zeigen

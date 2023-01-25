@@ -39,3 +39,6 @@ Bootstrap. Wenn man Bootstrap-Lingo verstanden hat, kann man sehen, was bei Komp
 Offensichtlich ist es gerade bei größeren Anwendungen notwendig, bei Anfragen, die auf interne oder externe APIs zugreifen, entsprechende Methoden zur Fehlerbehandlung einzubauen. Gerade wenn diese Endpunkte verschiedene Status-Codes schicken oder beispielsweise mit Rate-Limits versehen sind. Außerdem sollte man sich immer wieder vor Augen führen, das `await` bei Anfragen verwendet werden sollte. Gerade wenn Teile des Programms von Daten aus Promises abhängig sind, sollte man dieses Muster verfolgen, da es ansonsten zu ungewollten Fehlern kommen kann. 
 ### Wie könnte man dieses Problem lösen?
 Einfach akribischere Fehlerbehandlung implementieren. Methoden, die REST-konforme Requests durchführen sollten als `async` deklariert werden, gerade wenn Teile des Codes von diesen Anfragen abhängen. Die API-Endpunkte sollten unter verschiedenen Bedingungen getestet und ihre Dokumentation studiert werden. 
+
+#### Ich schätze mal alles weitere, werden wir dann im technischen Interview besprechen. Ich freue mich, von Euch zu hören! 
+##### Mit freundlichen Grüßen, Tom Wanning

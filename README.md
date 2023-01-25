@@ -48,7 +48,7 @@ Einfach akribischere Fehlerbehandlung implementieren. Methoden, die REST-konform
 ## 6. Kommentare entsprechen nicht unserem Standard
 Ich hab mich darum bemüht, Kommentare so detailliert und knapp wie möglich zu halten. Solange der Code lesbar ist, passt es bei kleinen Projekten. Langfristig und gerade innerhalb eines Unternehmens sollte man sich natürlich auf Standards einigen.
 ### Wie könnte man dieses Problem lösen?
-Man kann tatsächlich auch hier ChatGPT nutzen. Man postet Code mit Kommentaren, um GPT den Standard beizubringen und gibt ihm dann für neuen Code die Aufgabe, diesen mit Kommentaren im Stil des vorherigen Posts zu erstellen. Das funktioniert ziemlich gut. Man sollte hierbei natürlich beachten, dass ChatGPT mit Rate-Limits versehen ist und Ausgabe eine maximale Zeichenlänge haben.
+Man kann tatsächlich auch hier ChatGPT nutzen. Man postet Code mit Kommentaren, um GPT den Standard beizubringen und gibt ihm dann für neuen Code die Aufgabe, diesen mit Kommentaren im Stil des vorherigen Posts zu erstellen. Das funktioniert ziemlich gut. Man sollte hierbei natürlich beachten, dass ChatGPT mit Rate-Limits versehen ist und Ausgaben eine maximale Zeichenlänge haben.
 
 #### Ich schätze mal alles weitere, werden wir dann im technischen Interview besprechen. Ich freue mich, von Euch zu hören! 
 ##### Mit freundlichen Grüßen, Tom Wanning

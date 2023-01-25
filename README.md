@@ -5,6 +5,10 @@ Alle Pflichtkomponenten, sprich die Navbar, der MainView, sowie der DetailView w
 Auch den ComparisonView habe ich eingebaut.
 Insofern habe ich also alle Komponenten, die genannt wurden erstellen können und diese sind auch funktionstüchtig.
 
+## Wie kann ich dieses Projekt testen?
+Ich gehe mal davon aus, dass ihr Node ohnehin nutzt. Ergo einfach dieses Repository klonen und dann im jeweiligen Verzeichnis `npm install` ausführen.
+Mit `npm start` wird das Projekt dann auf `localhost:3000
+
 Im Folgenden kommen Punkte, die ihr wahrscheinlich ansprechen würdet:
 
 ## 1. Es waren Bilder gefordert, die beispielsweise das Banner/Profilbild eines Künstlers zeigen

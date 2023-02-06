@@ -1,0 +1,14 @@
+<div class="navbar">
+    <h1 class="title">NTAG - Angular Coding Challenge</h1>
+    <form>
+    <input type="text" class="searchbar" placeholder="Search" (input)="onInputChange($event)">
+    <div class="dropdown" *ngIf="showDropdown">
+      <ul>  
+        <li *ngFor="let searchResult of searchResults" (click)="onClickSearchResult(searchResult.name)">{{searchResult.name}}</li>
+      </ul>
+    </div>
+    </form>
+    <a href="#compare" class="compare-link">Compare</a>
+    
+  </div>
+  

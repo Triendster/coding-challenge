@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .title {
+    margin-right: auto;
+    font-size: 3vh;
+  }
+  
+  .searchbar {
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .compare-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: block;
+    width: 200px;
+    z-index: 1;
+  }
+
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown ul li:hover {
+    background-color: antiquewhite;
+  }

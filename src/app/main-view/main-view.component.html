@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="dropdown">
+      <div class="dropdown-container" (mouseenter)="showDropdown()" (mouseleave)="hideDropdown()">Select Country
+      <div *ngIf="showCountryDropdown" class="dropdown-content">
+        <div class="dropdown-country" (click)="onCountrySelected('germany')">Germany</div>
+        <div class="dropdown-country" (click)="onCountrySelected('spain')">Spain</div>
+        <div class="dropdown-country" (click)="onCountrySelected('france')">France</div>
+      </div>
+    </div>
+    </div>
+    <h1>Top 10 Artists: {{ selectedCountry }} </h1>
+    <ul *ngIf="countryTopArtists.length > 0">
+      <li *ngFor="let artist of countryTopArtists" (click)="onArtistSelected(artist)">{{ artist }}</li>
+    </ul>
+  </div>
+  

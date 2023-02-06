@@ -1,0 +1,24 @@
+write me some boilerplate angular html and css for a component with the following fields:
+
+title: should be <h1> with value: compare artists
+searchbar:
+    -> default: enter artists name
+    -> (input) event listener
+
+search-results:
+    -> split into two boxes
+    -> on the left: search results from search in searchbar
+    -> each item in search results should have an onclick event listener with input being the name of the element
+    -> on the right: populated with items by clicking item in left box
+    -> each item on the right should also have an onclick event listener with input being the name of the element
+
+detail view:
+    ->split into two boxes
+    ->on the left: info of selected artist from left box in search results
+    ->on the right: same, but from box in search results on the right
+
+
+the fields are vertically stacked.
+search-result boxes are alligned horizontally and each 50% in width and the same height.
+detail view boxes same as search-result boxes.
+

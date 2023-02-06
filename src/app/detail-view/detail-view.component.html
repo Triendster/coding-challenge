@@ -1,0 +1,28 @@
+<div *ngIf="selectedArtist">
+    <h2>{{ selectedArtist.name }}</h2>
+    <p>{{ selectedArtist.summary }}</p>
+    <div class="stats">
+      <div>
+        <p>Listeners: {{ selectedArtist.listeners }}</p>
+      </div>
+      <div>
+        <p>Plays: {{ selectedArtist.plays }}</p>
+      </div>
+    </div>
+    <h3>Top Albums:</h3>
+    <div class="albums">
+      <div *ngFor="let album of selectedArtist.albums">
+        <p><b>{{ album.name }}</b></p>
+        <p>Plays: {{ album.playcount }}</p>
+      </div>
+    </div>
+    <h3>Top Tracks:</h3>
+    <div class="tracks">
+      <div *ngFor="let track of selectedArtist.tracks">
+        <p><b>{{ track.name }}</b></p>
+        <p>Plays: {{ track.playcount }}</p> 
+        <p>Listeners: {{ track.listeners }}</p>
+      </div>
+    </div>
+  </div>
+  

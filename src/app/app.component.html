@@ -1,0 +1,6 @@
+<div>
+  <app-navbar (artistSelected)="onArtistSelected($event)"></app-navbar>
+  <app-detail-view [selectedArtist]="artistSelected"></app-detail-view>
+  <app-main-view (artistSelected)="onArtistSelected($event)"></app-main-view>
+  <app-comparison-view></app-comparison-view>
+</div>

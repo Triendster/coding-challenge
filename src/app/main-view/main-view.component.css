@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-container {
+    background-color: greenyellow;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+  }
+
+  .dropdown-country:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .container ul li:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+  }
+  

@@ -1,0 +1,67 @@
+<div class="container">
+    <h1>Compare Artists</h1>
+    <div class="search-container">
+      <input type="text" placeholder="Enter artist name" (input)="onInputChange($event)">
+    </div>
+    <div class="results-container">
+      <div class="results-box">
+        <ul class="list">
+        <li *ngFor="let artist of artistSearchResults" (click)="selectArtist(artist.name, 'artist')">
+            {{ artist.name }}
+        </li>
+        </ul>
+        </div>
+      <div class="results-box">
+        <ul class="list">
+        <li *ngFor="let artist of artistComparisonResults" (click)="selectArtist(artist.name, 'compare')">
+            {{ artist.name }}
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="detail-container">
+      <div class="detail-box">
+        <div *ngIf="selectedArtist">
+            <h2>Main Artist</h2>
+            <h2> {{ selectedArtist.name }} </h2>
+            <p> {{ selectedArtist.summary }}</p>
+            <h3>Stats</h3>
+            <p> {{ selectedArtist.plays }} plays</p>
+            <p> {{ selectedArtist.listeners }} listeners</p>
+            <h3>Albums</h3>
+            <ul class="list">
+                <li *ngFor="let album of selectedArtist.albums">
+                    <b> {{ album.name }}</b> - {{ album.playcount }}
+                </li>
+            </ul>
+            <ul class="list">
+                <li *ngFor="let track of selectedArtist.tracks">
+                    <b> {{ track.name }}</b> - {{ track.playcount }} plays - {{ track.listeners }} listeners 
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="detail-box">
+        <div *ngIf="selectedComparedArtist">
+            <h2>Compared Artist</h2>
+            <h2> {{ selectedComparedArtist.name }} </h2>
+            <p> {{ selectedComparedArtist.summary }}</p>
+            <h3>Stats</h3>
+            <p> {{ selectedComparedArtist.plays }} plays</p>
+            <p> {{ selectedComparedArtist.listeners }} listeners</p>
+            <h3>Albums</h3>
+            <ul class="list">
+                <li *ngFor="let album of selectedComparedArtist.albums">
+                    <b> {{ album.name }}</b> - {{ album.playcount }}
+                </li>
+            </ul>
+            <ul class="list">
+                <li *ngFor="let track of selectedArtist.tracks">
+                    <b> {{ track.name }}</b> - {{ track.playcount }} plays - {{ track.listeners }} listeners 
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</div>
+  

@@ -1,0 +1,16 @@
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .albums, .tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .albums div, .tracks div {
+    width: calc(100% / 5);
+  }
+  
